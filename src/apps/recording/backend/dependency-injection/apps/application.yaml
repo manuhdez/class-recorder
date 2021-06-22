@@ -1,0 +1,11 @@
+services:
+  Apps.controllers.VideoPostController:
+    class: ./apps/recording/backend/controllers/Video/VideoPostController
+    arguments: ["@Videos.VideoCreator"]
+
+  Apps.controllers.VideoGetController:
+    class: ./apps/recording/backend/controllers/Video/VideoGetController
+    arguments: ["@Videos.VideoFinder"]
+
+  Apps.controllers.StatusController:
+    class: ./apps/recording/backend/controllers/Status/StatusController

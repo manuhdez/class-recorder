@@ -2,8 +2,8 @@ import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
-  rootDir: '.',
-  moduleFileExtensions: ['ts', 'tsx'],
+  rootDir: 'src',
+  moduleFileExtensions: ['js', 'ts', 'tsx'],
   clearMocks: true
 };
 
