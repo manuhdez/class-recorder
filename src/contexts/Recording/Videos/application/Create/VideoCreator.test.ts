@@ -1,16 +1,20 @@
-import Video from '../../domain/Video';
 import VideoCreator from './VideoCreator';
-import MockVideoRepository from '../../infrastructure/__mocks__/MockVideoRepository';
+import VideoMother from '../../../../../test/Recording/Videos/domain/VideoMother';
+import MockVideoRepository from '../../../../../test/Recording/Videos/infrastructure/MockVideoRepository';
+import Video from '../../domain/Video';
+
+const repository = new MockVideoRepository();
+const videoCreator = new VideoCreator(repository);
+
+afterEach(() => jest.clearAllMocks());
 
 describe('With a valid video', () => {
   test('it should save the video on the repository', () => {
-    const testVideo = new Video('test video title');
-    const repository = new MockVideoRepository();
-    const videoCreator = new VideoCreator(repository);
+    const videoTitle = VideoMother.randomVideoTitle();
+    const expectedVideo = new Video(videoTitle);
 
-    videoCreator.invoke(testVideo);
-
-    expect(repository.mockSave).toHaveBeenCalled();
-    expect(repository.mockSave).toHaveBeenCalledWith(testVideo);
+    videoCreator.invoke(videoTitle);
+    expect(repository.save).toHaveBeenCalledTimes(1);
+    expect(repository.save).toHaveBeenCalledWith(expectedVideo);
   });
 });

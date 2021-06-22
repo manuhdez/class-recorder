@@ -1,13 +1,12 @@
 import Video from '../../domain/Video';
-
-export interface VideoRepository {
-  save(video: Video): void;
-}
+import VideoTitle from '../../domain/VideoTitle';
+import VideoRepository from '../../domain/VideoRepository';
 
 export default class VideoCreator {
   constructor(private videoRepository: VideoRepository) {}
 
-  invoke(video: Video): void {
+  invoke(title: VideoTitle): void {
+    const video = Video.create(title);
     this.videoRepository.save(video);
   }
 }
