@@ -1,0 +1,29 @@
+version: "3.9"
+
+# Defining a default app container
+x-app-service: &default-app
+  build: .
+  volumes:
+    - .:/app
+    - ./node_modules:/app/node_modules
+
+services:
+  recording-api:
+    <<: *default-app
+    depends_on:
+      - recording-db
+    environment:
+      - MONGO_URL=recording-backend-mongo://mongo:27017/dev
+    command: yarn dev:apps:recording:backend
+    ports:
+      - 5000:5000
+
+  recording-db:
+    image: mongo:5.0.0-rc1-focal
+    volumes:
+      - recording-backend-db:/data/db
+    ports:
+      - 27017:27017
+
+volumes:
+  recording-backend-db:
