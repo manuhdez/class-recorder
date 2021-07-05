@@ -26,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+    - name: Buid containers with docker compose
+    - run: docker-compose -f docker-compose.yml up -d
     - run: yarn install --frozen-lockfile
     - run: yarn test:ci
 
