@@ -28,6 +28,6 @@ jobs:
         cache: 'yarn'
     - name: Buid containers with docker compose
       run: docker-compose -f docker-compose.yml up -d
-    - run: yarn install
+    - run: sudo yarn install
     - run: yarn test:ci
 
