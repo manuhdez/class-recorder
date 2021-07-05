@@ -13,7 +13,7 @@ services:
     depends_on:
       - recording-db
     environment:
-      - MONGO_URL=recording-backend-mongo://mongo:27017/dev
+      - MONGO_URL=mongodb://recording-db:27017/recordings
     command: yarn dev:apps:recording:backend
     ports:
       - 5000:5000

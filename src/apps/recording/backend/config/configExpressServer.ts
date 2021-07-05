@@ -1,32 +1,23 @@
-import express, { Express, NextFunction, Request, Response, Router } from 'express';
-import bodyParser from 'body-parser';
+import express, { Express, Router, json, urlencoded } from 'express';
 import helmet from 'helmet';
 import registerRoutes from '../routes';
-import HttpError from '../../../../contexts/Shared/domain/HttpError';
-import Logger from '../../../../contexts/Shared/domain/Logger';
+import errorHandler from '../middlewares/errorhandler';
+import handleRouteNotFound from '../middlewares/handleRouteNotFound';
 
-export default function configExpressServer(logger?: Logger): Express {
-  const router = Router();
+export default function configExpressServer(): Express {
   const app = express();
-
-  app.use(bodyParser.json());
-  app.use(bodyParser.urlencoded({ extended: true }));
+  app.use(json());
+  app.use(urlencoded({ extended: true }));
   app.use(helmet.xssFilter());
   app.use(helmet.noSniff());
   app.use(helmet.hidePoweredBy());
   app.use(helmet.frameguard({ action: 'deny' }));
-  // app.use(compress());
 
-  app.use(router);
+  const router = Router();
   registerRoutes(router);
-
-  router.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
-    logger?.error(err);
-    res.status(err.status).json({
-      success: false,
-      error: err.message
-    });
-  });
+  app.use(router);
+  app.use(errorHandler);
+  app.use(handleRouteNotFound);
 
   return app;
 }

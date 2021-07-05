@@ -6,7 +6,11 @@ export default class VideoGetController implements Controller {
   constructor(private videoFinder: VideoFinder) {}
 
   async run(req: Request, res: Response) {
-    const videos = this.videoFinder.invoke();
-    res.status(200).json({ videos });
+    const videos = await this.videoFinder.invoke();
+
+    res.status(200).json({
+      success: true,
+      videos: !videos ? [] : videos.map(video => video.toPrimitives())
+    });
   }
 }

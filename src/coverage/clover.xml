@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1625506892615" clover="3.2.0">
+  <project timestamp="1625506892615" name="All files">
+    <metrics statements="145" coveredstatements="141" conditionals="23" coveredconditionals="12" methods="47" coveredmethods="45" elements="215" coveredelements="198" complexity="0" loc="145" ncloc="145" packages="14" files="20" classes="20"/>
+    <package name="apps.recording.backend.config">
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="configExpressServer.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/config/configExpressServer.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="apps.recording.backend.controllers.Video">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+      <file name="VideoGetController.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/controllers/Video/VideoGetController.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="6" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="VideoPostController.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/controllers/Video/VideoPostController.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="apps.recording.backend.middlewares">
+      <metrics statements="7" coveredstatements="7" conditionals="10" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="errorhandler.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/middlewares/errorhandler.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="10" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="6" type="cond" truecount="2" falsecount="6"/>
+        <line num="9" count="6" type="stmt"/>
+      </file>
+      <file name="handleRouteNotFound.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/middlewares/handleRouteNotFound.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="apps.recording.backend.tests">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="app.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/apps/recording/backend/tests/app.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Recording.Shared.infrastructure.persistence.mongo">
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="MongoConfigFactory.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Shared/infrastructure/persistence/mongo/MongoConfigFactory.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Recording.Videos.application.Create">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="VideoCreator.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Videos/application/Create/VideoCreator.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Recording.Videos.domain">
+      <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+      <file name="Video.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Videos/domain/Video.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="31" type="stmt"/>
+        <line num="7" count="31" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="19" count="19" type="stmt"/>
+      </file>
+      <file name="VideoId.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Videos/domain/VideoId.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+      </file>
+      <file name="VideoTitle.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Videos/domain/VideoTitle.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="33" type="stmt"/>
+        <line num="10" count="33" type="stmt"/>
+        <line num="11" count="30" type="stmt"/>
+        <line num="15" count="33" type="stmt"/>
+        <line num="16" count="31" type="stmt"/>
+        <line num="17" count="31" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="33" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="contexts.Recording.Videos.infrastructure">
+      <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <file name="MongoVideoRepository.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Recording/Videos/infrastructure/MongoVideoRepository.ts">
+        <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Shared.domain">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="AggregateRoot.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Shared/domain/AggregateRoot.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Shared.domain.errors">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="InvalidUuid.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Shared/domain/errors/InvalidUuid.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Shared.domain.value-object">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="Uuid.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Shared/domain/value-object/Uuid.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="8" count="53" type="stmt"/>
+        <line num="9" count="50" type="stmt"/>
+        <line num="13" count="53" type="stmt"/>
+        <line num="14" count="53" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts.Shared.infrastructure.persistence.mongo">
+      <metrics statements="23" coveredstatements="23" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="9"/>
+      <file name="MongoClientFactory.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Shared/infrastructure/persistence/mongo/MongoClientFactory.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+      </file>
+      <file name="MongoRepository.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/contexts/Shared/infrastructure/persistence/mongo/MongoRepository.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="10" count="21" type="stmt"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="30" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="test.Recording.Videos.domain">
+      <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="5"/>
+      <file name="VideoMother.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/test/Recording/Videos/domain/VideoMother.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="5"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="17" count="15" type="stmt"/>
+        <line num="18" count="15" type="stmt"/>
+        <line num="19" count="15" type="stmt"/>
+        <line num="23" count="15" type="stmt"/>
+      </file>
+    </package>
+    <package name="test.Recording.Videos.infrastructure">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="MockVideoRepository.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/test/Recording/Videos/infrastructure/MockVideoRepository.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="utils.ts" path="/Users/manuhdez/Develop/projects/class-recorder/src/test/Recording/Videos/infrastructure/utils.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

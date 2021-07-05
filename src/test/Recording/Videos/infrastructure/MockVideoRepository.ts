@@ -3,4 +3,6 @@ import VideoRepository from '../../../../contexts/Recording/Videos/domain/VideoR
 export default class MockVideoRepository implements VideoRepository {
   save = jest.fn();
   all = jest.fn();
+  find = jest.fn();
+  clear = jest.fn();
 }

@@ -1,6 +1,7 @@
 services:
   Videos.VideoRepository:
-    class: ./contexts/Recording/Videos/infrastructure/InMemoryVideoRepository
+    class: ./contexts/Recording/Videos/infrastructure/MongoVideoRepository
+    arguments: ['@Shared.MongoClient']
 
   Videos.VideoCreator:
     class: ./contexts/Recording/Videos/application/Create/VideoCreator

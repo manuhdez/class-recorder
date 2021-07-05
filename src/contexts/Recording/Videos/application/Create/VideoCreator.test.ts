@@ -10,10 +10,11 @@ afterEach(() => jest.clearAllMocks());
 
 describe('With a valid video', () => {
   test('it should save the video on the repository', () => {
+    const videoId = VideoMother.randomVideoId();
     const videoTitle = VideoMother.randomVideoTitle();
-    const expectedVideo = new Video(videoTitle);
+    const expectedVideo = new Video(videoId, videoTitle);
 
-    videoCreator.invoke(videoTitle);
+    videoCreator.invoke(videoId, videoTitle);
     expect(repository.save).toHaveBeenCalledTimes(1);
     expect(repository.save).toHaveBeenCalledWith(expectedVideo);
   });

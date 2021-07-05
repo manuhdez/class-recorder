@@ -1,18 +1,24 @@
+import VideoId from './VideoId';
 import VideoTitle from './VideoTitle';
+import AggregateRoot from '../../../Shared/domain/AggregateRoot';
 
-export default class Video {
-  // @ts-ignore
-  private title: VideoTitle;
-
-  constructor(title: VideoTitle) {
-    this.title = title;
+export default class Video extends AggregateRoot {
+  constructor(readonly id: VideoId, readonly title: VideoTitle) {
+    super();
   }
 
-  public static create(title: VideoTitle): Video {
-    return new Video(title);
+  public static create(id: VideoId, title: VideoTitle): Video {
+    return new Video(id, title);
   }
 
-  public getTitle(): string {
-    return this.title.getValue();
+  public static fromPrimitives(video: { id: string; title: string }): Video {
+    return new Video(new VideoId(video.id), new VideoTitle(video.title));
+  }
+
+  public toPrimitives() {
+    return {
+      id: this.id.value,
+      title: this.title.value
+    };
   }
 }

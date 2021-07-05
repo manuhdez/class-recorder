@@ -13,7 +13,7 @@ export default class Server {
   constructor(port: string) {
     this.port = port;
     this.logger = container.get('Shared.Logger');
-    this.express = configExpressServer(this.logger);
+    this.express = configExpressServer();
   }
 
   getHttpServer(): http.Server | undefined {
